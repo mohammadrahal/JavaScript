@@ -6,7 +6,6 @@ if(num1 > num2){
 } else{
     console.log("bye");
 }
-
 // boolean
 
 const canPass = false;

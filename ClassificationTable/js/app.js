@@ -6,25 +6,26 @@ const prime = document.getElementById('primeNum');
 function even() {
     // const numb = document.getElementById('number');
     for (let i = 0; i < array.length; i++) {
-        if (i % 2 == 0) {
-            numb.innerHTML = i + "is even";
-            console.log(i)
+        if (array[i] % 2 == 0) {
+            numb.textContent = array[i] + "is even";
+            console.log(array[i] + "is even")
         } else {
-            numb.innerHTML = i + "is odd";
+            numb.textContent = array[i]+ "is odd";
+            console.log(array[i] + "is odd" )
         }
     }
 }
 
 
-function isPrime(array){
-    if(array<1){
-        prime.innerHTML = array;
+function isPrime(number){
+    if(number<1){
+        prime.innerHTML = number;
         return false
       
     }
-    for (let i=2; i< array.length ; i++){
-        if(array % i ===0){
-            prime.innerHTML = array;
+    for (let i=2; i< number ; i++){
+        if(number % i ===0){
+            prime.innerHTML = number;
             return false 
         }
     }
@@ -34,3 +35,6 @@ function isPrime(array){
 
 // even numbers call
 even()
+
+// prime
+isPrime()
